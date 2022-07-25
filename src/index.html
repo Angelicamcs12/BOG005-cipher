@@ -7,7 +7,39 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <header>
+        <div class="contenedor_nav">
+          <nav>
+            <ul class="ul">
+              <li class="li">Inicio</li>
+              <li class="li">Vamos a Cifrar</li>
+              <li class="li">Contactanos</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="subcontenedor_main">
+        <main>
+          <div class="bloque">
+            <h1>BIENVENIDO A ECRYPTION ANALYST</h1>
+            <p>Lo más importante para nosotros es tu seguridad, por lo que te ofrecemos un servicío con el que puedes encriptar tus mensajes o las claves de tus redes sociales para que NUNCA NADIE tenga acceso a ellas, e incluso puedes usar un nuevo lenguaje privado con tus seres queridos, todo queda a tu imaginación <p>
+          </div>
+          <div class="bloque">
+            <h3>Escribe tu mensaje</h3>
+            <p><textarea name="mensaje_cifrado" id="mensaje" rows="10" cols="40">Escribe aquí tu mensaje a cifrar</textarea></p>
+
+            <h3>Desplazamiento:</h3>
+            <p><input type="number" id="desplazamiento" size="5"></p>
+            
+            <p><button type="button" id="encode">Cifrar</button>
+            <button type="button" id="decode">Descifrar</button></p><br>
+            <p><textarea name="mensaje_descifrado" id="mensaje2" rows="10" cols="40">Escribe aquí tu mensaje a descifrar</textarea></p>
+          </div>
+          <div class="bloque">
+            Contactanos
+          </div>
+        </main>
+      </div>  
     </div>
     <script src="index.js" type="module"></script>
   </body>
