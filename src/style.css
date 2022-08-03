@@ -1,49 +1,105 @@
+@import url('http://fonts.cdnfonts.com/css/hando-soft-trial');
+* {
+    font-family: 'Hando Soft Trial', sans-serif;
+}
+
 body{
     background-color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .contenedor_nav{
     margin: 0%;
-    width: 100%;
-    background-color: lightgrey;
+    background-color: lightsteelblue;
     padding: 1em;
+}
+.contenedor_nav .li:hover{
+    background-color: #537FA6;
+    color: white;
 }
 .ul{
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    font-size: 20px;
 }
 .li{
-    background-color: lightgrey;
+    background-color: lightsteelblue;
     padding: 1em;
     margin: 0 2em 0 0;
     transition: all .5s ease;
     list-style: none;
     border-radius: 20px;
+    font-weight: bold;
 }
 .subcontenedor_main{
-    width: 100%;
-    margin: 0%;
     padding: 1em;
     min-height: 100vh;
-    background-color: gray;
-    position: relative;
+    background-color: #537FA6;
+    margin: 15px auto 15px auto;
 }
 .bloque{
     background-color: aliceblue;
     margin: 1em;
     padding: 1em;
-    position: absolute;
     top: 1em;
     opacity: 0;
     transition: all .5s ease;
     text-align: center;
+
+    height: 100%;
+    margin: 0px 0px;
+    margin-left: 0px;
+    color: black;
+    box-shadow: 4px 4px 20px 0px whitesmoke;
+    border-radius: 15px;
 }
 .li.activo{
-    background-color: lightcyan;
+    background-color: aliceblue;
 }
 .bloque.activo{
     opacity: 1;
+}
+footer {
+    background-color: black;
+    color: white;
+    height: 40px;
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    color: #537FA6;
+    font-size: 80px;
+}
+h2{
+    color: #537FA6;
+}
+#descripcion{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+#encode{
+    align-items: center;
+    border: none;
+    background-color:green;
+    padding: 12px 35px;
+    color:white;
+    display: inline-block;
+    margin: 10px;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 20px;
+}
+#decode{
+    align-items: center;
+    border: none;
+    background-color:#537FA6;
+    padding: 12px 35px;
+    color:white;
+    display: inline-block;
+    margin: 10px;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 20px;
 }

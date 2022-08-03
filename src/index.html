@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Encryption Analyst</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,30 +18,53 @@
           </nav>
         </div>
       </header>
-      <div class="subcontenedor_main">
+      <div class="subcontenedor_main"> 
         <main>
           <div class="bloque">
-            <h1>BIENVENIDO A ECRYPTION ANALYST</h1>
-            <p>Lo más importante para nosotros es tu seguridad, por lo que te ofrecemos un servicío con el que puedes encriptar tus mensajes o las claves de tus redes sociales para que NUNCA NADIE tenga acceso a ellas, e incluso puedes usar un nuevo lenguaje privado con tus seres queridos, todo queda a tu imaginación <p>
+          <article class="instrucciones">
+            <h1><u>BIENVENIDA <br> A ECRYPTION ANALYST</u></h1>
+            <p id="descripcion">Lo más importante para nosotros es tu seguridad, y en la actualidad podemos estar muy expuestos y propensos a robo de información importante, muy muy importante con absoluta facilidad, nunca está de más un poco más de seguridad.<br>
+              Encryption Analyst te ofrece el mejor servicio de cifrado, pero te preguntarás ¿para qué sirve el cifrado?, pues aquí te lo vamos a explicar.<p><br>
+            <h2>¿QUÉ SON LOS CIFRADOS?</h2>
+            <p>El cifrado es la base principal de la seguridad de datos. Es la forma más sencilla e importante para garantizar que la información de un sistema de computadora no pueda robarla ni leerla alguien que desee utilizarla con fines maliciosos.</p>
+            <h2>¿PARA QUÉ SIRVE EL CIFRADO?</h2>
+            <p>Realizar un cifrado o encriptado de la información significa que no todo el mundo pueda acceder a un contenido. Es un proceso mediante el que se codifica cualquier tipo de información para que no resulte fácil de entender para quienes no conocen los algoritmos criptográficos o no tiene una autorización de acceso.
+              Con el cifrado de la información lo que se consigue es ocultar los datos de manera que no sea fácil poder desvelar el contenido. El cifrado de información implica una alteración mediante un algoritmo matemático que transforma unos datos legibles en ilegibles. 
+              Sólo podrán tener acceso a ellos las personas que tengan la clave para acceder.</p>
+            <h2>¿EN QUÉ CONSISTE LA CLAVE DE ACCESO O DESPLAZMIENTO?</h2>
+            <p>En criptografía, el cifrado César, también conocido como cifrado por desplazamiento, o desplazamiento de César, es una de las técnicas decodificación más simples y más usadas. 
+              Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. 
+              Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A ), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.</p><br>
+            <p id="descripcion">Aquí en Encryption Analyst, puedes encriptar tus contraseñas de redes sociales para hacerlas mucho más seguras, puedes cifrar tu información personal o confidencial para hacerla mil veces más segura, puedes hasta crear tu propia forma de comunicación con tu pareja, familia o amigos.
+              Los límites los pone tu imaginación.</p>
+            <h2>AHORA QUE SABES LO NECESARIO, ¿ESTAS LISTA PARA EMPEZAR A CIFRAR?<br>VAMOS A LA PESTAÑA DE CIFRADO</h2>
+          </article>
           </div>
           <div class="bloque">
             <h3>Escribe tu mensaje</h3>
-            <p><textarea name="mensaje_cifrado" id="mensaje" rows="10" cols="40">Escribe aquí tu mensaje a cifrar</textarea></p>
+            <p id="msj1"><textarea name="mensaje_cifrado" id="mensaje" rows="10" cols="60" placeholder="Escribe aquí tu mensaje"></textarea></p>
 
             <h3>Elige el desplazamiento:</h3>
-            <p><input type="number" id="desplazamiento" size="5"></p>
+            <p id="desplazamiento"><input type="number" id="desplazamiento" size="5" placeholder="Elije un número"></p><br>
             
-            <p><button type="button" id="encode">Cifrar</button>
-            <button type="button" id="decode">Descifrar</button></p><br>
             <h3>Tu mensaje cifrado/descifrado</h3>
-            <p><textarea name="mensaje_descifrado" id="mensaje2" rows="10" cols="40">Escribe aquí tu mensaje a descifrar</textarea></p>
+            <p id="msj2"><textarea name="mensaje_descifrado" id="mensaje2" rows="10" cols="60" placeholder="Este es tu resultado"></textarea></p>
+
+            <p><button type="button" id="encode">Cifrar</button>
+              <button type="button" id="decode">Descifrar</button></p><br>
           </div>
           <div class="bloque">
-            Contactanos
+            <h2>¡Ante cualquier duda, queja o reclamo estaremos siempre atentos a ti!</h2>
+            <p class="contact">Por favor no dudes en contactarte a nuestro correo institucional <b>encryptionanalyst@email.com</b></p>
           </div>
         </main>
       </div>  
     </div>
+
+    <footer>
+      <p class="footerText">2022 - Todos los derechos reservados</p>
+    </footer>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>

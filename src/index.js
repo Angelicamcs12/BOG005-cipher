@@ -1,5 +1,6 @@
 import cipher from './cipher.js';
 
+//Creamos pestañas
 const li = document.querySelectorAll('.li');
 const bloque = document.querySelectorAll('.bloque');
 
@@ -17,7 +18,26 @@ const bloque = document.querySelectorAll('.bloque');
         li[i].classList.add('activo')
         bloque[i].classList.add('activo')
     })
- })
+ });
 
+ 
+ //Botón y función de cifrar
+ document.getElementById("encode").addEventListener("click", encode);
+
+ function encode(){
+     let texto = document.getElementById("mensaje").value;
+     let desplazamiento = parseInt (document.getElementById("desplazamiento").value);
+     document.getElementById("mensaje2").value = cipher.encode(texto, desplazamiento);
+ }
+ 
+ //Botón y función de descifrar
+ document.getElementById("decode").addEventListener("click", decode);
+ 
+ function decode(){
+     let texto = document.getElementById("mensaje").value;
+     let desplazamiento = parseInt (document.getElementById("desplazamiento").value);
+     document.getElementById("mensaje2").value = cipher.decode(texto, desplazamiento);
+ }
+ 
 
 console.log(cipher);
