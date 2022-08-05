@@ -25,18 +25,18 @@ const bloque = document.querySelectorAll('.bloque');
  document.getElementById("encode").addEventListener("click", encode);
 
  function encode(){
-     let texto = document.getElementById("mensaje").value;
+     let texto = document.getElementById("mensaje").value.toUpperCase();
      let desplazamiento = parseInt (document.getElementById("desplazamiento").value);
-     document.getElementById("mensaje2").value = cipher.encode(texto, desplazamiento);
+     document.getElementById("mensaje2").value = cipher.encode(desplazamiento, texto);
  }
  
  //Botón y función de descifrar
  document.getElementById("decode").addEventListener("click", decode);
  
  function decode(){
-     let texto = document.getElementById("mensaje").value;
+     let texto = document.getElementById("mensaje").value.toUpperCase();
      let desplazamiento = parseInt (document.getElementById("desplazamiento").value);
-     document.getElementById("mensaje2").value = cipher.decode(texto, desplazamiento);
+     document.getElementById("mensaje2").value = cipher.decode(desplazamiento, texto);
  }
  
 
